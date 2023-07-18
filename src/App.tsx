@@ -1,29 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import { MantineProvider } from '@mantine/core';
+import ApprovalRejectionInterface from "./ApprovalRejectionInterface"
+
+
 
 function App() {
   return (
     <MantineProvider withGlobalStyles withNormalizeCSS>
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.tsx</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React with Jeff
-          </a>
-        </header>
-      </div>
+      <ApprovalRejectionInterface />
     </MantineProvider>
   );
 }
+
 
 export default App;
